@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Api Automation Suite">
+	<listeners>
+		<listener class-name="com.api.extentReport.ExtentReport" />
+	</listeners>
+	<test name="Get Api Test">
+		<classes>
+			<class name="com.api.getTest.GetUserTest" />
+		</classes>
+	</test>
+
+</suite>
