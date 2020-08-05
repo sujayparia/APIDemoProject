@@ -9,8 +9,9 @@ public class UserBody {
 	
 	public static String createUserBody() throws JsonProcessingException {
 		User user = new User();
-		user.setJob(DataTable.getData("Create User", "job"));
-		user.setName(DataTable.getData("Create User", "name"));
+		
+		user.setJob(DataTable.getData("Create New User", "job"));
+		user.setName(DataTable.getData("Create New User", "name"));
 		
 		String body = SerialDeserial.ObjectToJson(user);
 		return body;

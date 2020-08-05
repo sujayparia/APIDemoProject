@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-05T14:50:01Z" name="Api Automation Suite" finished-at="2020-08-05T14:50:06Z" duration-ms="5353">
+  <suite started-at="2020-08-05T19:01:05Z" name="Default suite" finished-at="2020-08-05T19:01:10Z" duration-ms="4845">
     <groups>
     </groups>
-    <test started-at="2020-08-05T14:50:01Z" name="Get Api Test" finished-at="2020-08-05T14:50:06Z" duration-ms="5353">
-      <class name="com.api.getTest.GetUserTest">
-        <test-method is-config="true" signature="baseURIsetup()[pri:0, instance:com.api.getTest.GetUserTest@2f54a33d]" started-at="2020-08-05T14:50:01Z" name="baseURIsetup" finished-at="2020-08-05T14:50:02Z" duration-ms="725" status="PASS">
+    <test started-at="2020-08-05T19:01:05Z" name="Default test" finished-at="2020-08-05T19:01:10Z" duration-ms="4845">
+      <class name="com.api.createTest.CreateUserTest">
+        <test-method is-config="true" signature="baseURIsetup()[pri:0, instance:com.api.createTest.CreateUserTest@4bf48f6]" started-at="2020-08-05T19:01:05Z" name="baseURIsetup" finished-at="2020-08-05T19:01:06Z" duration-ms="666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseURIsetup -->
-        <test-method signature="getListUsers()[pri:0, instance:com.api.getTest.GetUserTest@2f54a33d]" started-at="2020-08-05T14:50:02Z" name="getListUsers" finished-at="2020-08-05T14:50:06Z" duration-ms="4146" status="PASS">
+        <test-method signature="createNewUser()[pri:0, instance:com.api.createTest.CreateUserTest@4bf48f6]" started-at="2020-08-05T19:01:06Z" name="createNewUser" finished-at="2020-08-05T19:01:10Z" duration-ms="3851" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getListUsers -->
-      </class> <!-- com.api.getTest.GetUserTest -->
-    </test> <!-- Get Api Test -->
-  </suite> <!-- Api Automation Suite -->
+        </test-method> <!-- createNewUser -->
+      </class> <!-- com.api.createTest.CreateUserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

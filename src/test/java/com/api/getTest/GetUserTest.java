@@ -18,34 +18,34 @@ import io.restassured.response.Response;
 
 @Listeners(ExtentReport.class)
 public class GetUserTest extends TestBase {
-	
+
 	@BeforeMethod
 	public void baseURIsetup() throws IOException {
 		baseURISetup();
 	}
-	
+
 	@Test
 	public void getListUsers() {
-		
+
 		Response response = RestAssured.given().headers(GetHeader.defaultHeaders())
-		.queryParams(QueryParamater.getListUsers_QueryParam("List Users", "page"))
-		.when()
-		.get(GetPath.LIST_USERS);
-		
+				.queryParams(QueryParamater.getListUsers_QueryParam("List Users", "page"))
+				.when()
+				.get(GetPath.LIST_USERS);
+
 		StatusValidator.statusCodeValidator(response, 200);
 	}
-	
+
 
 	@Test
 	public void getListUsers2() {
-		
+
 		Response response = RestAssured.given().headers(GetHeader.defaultHeaders())
-		.queryParams(QueryParamater.getListUsers_QueryParam("List Users", "page"))
-		.when()
-		.get(GetPath.LIST_USERS);
-		
+				.queryParams(QueryParamater.getListUsers_QueryParam("List Users", "page"))
+				.when()
+				.get(GetPath.LIST_USERS);
+
 		StatusValidator.statusCodeValidator(response, 400);
 	}
-	
+
 
 }
